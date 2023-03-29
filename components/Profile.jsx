@@ -1,4 +1,6 @@
 import { FaBuilding, FaMapMarkerAlt, FaEnvelope, FaGlobe, FaLink } from 'react-icons/fa';
+import ContributionsChart from './ContributionChart';
+
 
 const Profile = ({ profile }) => {
   if (!profile) {
@@ -51,6 +53,7 @@ const Profile = ({ profile }) => {
           </div>
         )}
       </div>
+      <ContributionsChart username={profile.login} />
     </div>
   );
 };
